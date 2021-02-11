@@ -1,0 +1,122 @@
+/*Method for importing font found on the same website as where the font comes from*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Big+Shoulders+Display:wght@100;600&display=swap');
+
+
+h1 {
+	/* learned how to use imported fonts here: https://www.w3schools.com/css/tryit.asp?filename=trycss_font-family */
+	/*learned how to change font size here: https://www.w3schools.com/cssref/pr_font_font-size.asp */
+	/*learned other helpful font styles here: https://www.tutorialbrain.com/css_tutorial/css_fonts/ */
+	background-color: lightblue;
+	font-family: 'Open Sans Condensed', sans-serif; 
+	font-size: 250%;
+	font-weight: lighter;
+	color: white;
+	text-align: center;
+}
+
+div.total {
+	position: absolute;
+	top: 590px;
+}
+
+div.list {
+	position: absolute;
+	top: 650px;
+}
+
+body {
+	background-image: url("https://i.pinimg.com/originals/c7/a0/ba/c7a0ba9fe40aca44f660f32fb4ad2545.jpg");
+}
+
+p { 
+	font-family: 'Abel', sans-serif;
+	font-size: 160%;
+	background-color: white;
+	}
+	
+/*Learned how to create custom scrollbar here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+   background-clip: padding-box;
+   -webkit-border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/*All dropdown code taken from here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover */	
+.dropbtn {
+  background-color: #ccffff;
+  color: black;
+  width: 100%;
+  border: 2px solid #6699ff;
+  padding: 16px;
+  font-family: 'Abel', sans-serif;
+  font-size: 100%;
+}
+
+.textarea {
+	position: absolute;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  font-family: 'Abel', sans-serif;
+  font-size: 100%;
+  overflow: auto;
+  height: 200px;
+  top: 600px;
+  left: 170px;
+}
+	
+.dropdown-content {
+	display: none;
+}
+
+/*Right border was not showing so I used advice from this site to change the 
+width so the whole border would show: https://stackoverflow.com/questions/20813899/border-right-not-showing */
+.dropdown-content button {
+  color: black;
+  width: 100%;
+  border: 2px solid #6699ff;
+  font-family: 'Abel', sans-serif;
+  font-size: 100%;
+  padding: 16px;
+  text-decoration: none;
+  background-color: #ccffff;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #9999ff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ccffff;}
+	
+
+
+.radio-button label {
+        display: inline-block;
+        background-color: #d1d1d1;
+        padding: 4px 11px;
+        font-family: Arial;
+        font-size: 18px;
+        cursor: pointer;
+      }    

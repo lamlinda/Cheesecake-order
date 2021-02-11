@@ -1,0 +1,108 @@
+<!-- Learned how to start off an html document from here https://www.w3schools.com/html/default.asp-->
+<!--This includes the doctype, html, title, head, body, h1, and p tags -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/></script>
+<script src="/javascripts/javascript.js"></script>
+
+<!--Figured out how to add the external file for css here https://www.w3schools.com/css/css_howto.asp -->
+<!--Learned to access css file in a different directory here: https://digicompdiy.wordpress.com/2013/09/26/how-do-i-link-a-css-file-in-a-different-folder/ -->
+<link rel="stylesheet" href="../stylesheets/cheesestyle.css">
+<title>Cheesecake Order Form</title>
+</head>
+<body>
+
+<!-- Learned how to write comments in html here https://www.w3schools.com/html/html_comments.asp -->
+
+<h1>Cheesecake Order Form</h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="W3Schools.com" width="170" height="190">
+
+<p id="thankyoumessage">Thank you! Your order has been placed</p>
+
+<!-- Learned how to format things into a table here https://www.w3schools.com/tags/tag_tr.asp -->
+<table id="quantitytopping">
+<tr>
+<td><p>Quantity</p></td>
+
+<td> <p>Topping</p></td>
+
+</tr>
+
+	<tr>
+	<td>
+	<!-- Info on how to create a dropdown taken from here https://www.w3schools.com/tags/tag_select.asp -->
+<select name="quantity" id="quantity">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select>
+</td>
+
+<!--Info on how to create radio buttons taken here https://www.w3schools.com/tags/att_input_type_radio.asp -->
+ <td>
+	<input type="radio" id="Plain" name="caketype" value="Plain">
+	<label for="Plain">Plain</label><br>
+	<input type="radio" id="Cherry" name="caketype" value="Cherry">
+	<label for="Cherry">Cherry</label><br>
+	<input type="radio" id="Chocolate" name="caketype" value="Chocolate">
+	<label for="Chocolate">Chocolate</label>
+	</td>
+	</tr>
+</table>
+
+<!--Learned how to create forms from this site https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_textarea -->
+<form>
+  <label for="message" id="messagelabel">Notes:</label><br> <!-- Learn to make labels here: https://www.w3schools.com/tags/tag_label.asp -->
+  <textarea id="notesbox" name="message" rows="4" cols="45" placeholder="Enter any special instructions here."></textarea>
+ </form>
+
+<!--Learned how to create buttons from this https://www.w3schools.com/html/html_forms.asp -->
+<br>
+<button id="orderbutton" type="button">Order</button>
+
+<div class="tablet">
+<table id="months">
+<tr>
+<td><div class="total"><p style="font-size:160%;">Total Orders for </p></div></td>
+
+<!--All dropdown code taken from here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover -->
+<td>
+	<div class="dropdown">
+		<button class="dropbtn" id="monthsbutton">Jan</button>
+	<div class="dropdown-content">
+		<button href="#" id="jan">Jan</button>
+		<button href="#" id="feb">Feb</button>
+		<button href="#" id="mar">Mar</button>
+		<button href="#" id="apr">Apr</button>
+		<button href="#" id="may">May</button>
+		<button href="#" id="jun">Jun</button>
+		<button href="#" id="jul">Jul</button>
+		<button href="#" id="aug">Aug</button>
+		<button href="#" id="sep">Sep</button>
+		<button href="#" id="oct">Oct</button>
+		<button href="#" id="nov">Nov</button>
+		<button href="#" id="dec">Dec</button>
+	</div>
+	</div>
+
+
+
+</td>
+
+</table>
+</div>
+
+<!--Learned to create lists here https://www.w3schools.com/html/html_lists.asp -->
+<div class="list">
+<ul>
+	<li>11 cherry</li>
+	<li>17 chocolate</li>
+	<li>31 plain</li>
+</ul>
+</div>
+
+</body>
+</html>
