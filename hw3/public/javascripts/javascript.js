@@ -1,4 +1,3 @@
-window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');
 
 //Learned how to have button trigger alert from this website https://www.w3schools.com/jquery/event_click.asp
 //how to use alerts: https://www.w3schools.com/jsref/met_win_alert.asp
