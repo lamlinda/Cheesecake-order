@@ -1,4 +1,4 @@
-
+window.$ = window.jQuery = require('./node_modules/jquery/dist/jquery.min.js');
 
 //Learned how to have button trigger alert from this website https://www.w3schools.com/jquery/event_click.asp
 //how to use alerts: https://www.w3schools.com/jsref/met_win_alert.asp
@@ -25,6 +25,7 @@
 		$('#dec').click(showdec);
 	});
 	
+	//helper functions for each month a user can click on in the dropdown button
 	showjan = function(event){
 		$('#monthsbutton').text("Jan");
 		$('#jan').hide();
@@ -87,7 +88,7 @@
 	
 
 	
-	//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover
+	//how to make rest of months appear when hovering here: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover
 	$('ul.parent > li').hover(function() {
 		$(this).find('ul.child').show();
 		
